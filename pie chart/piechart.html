@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["Right answers", "Wrong Answers", ];
+var yValues = [5, 4];
+var barColors = [
+  "#b91d47","#1e7145"
+ 
+  
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display:true,
+      text: "TOTAL SCORE"
+    }
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ /* background-color: chartreuse; */
+ background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}
+h1
+{
+     background-image:linear-gradient(to right,#EC4899,#8B5Cf6);
+     
+}
+h3 {
+  margin: 10px 0px;
+ 
+}
+
+.mainHeader {
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid blue; */
+}
+
+.quizArea {
+  width: 60vw;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height:60vh;
+  box-shadow: 0 0 10px 2px;
+}
+
+.buttonArea {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 60px 0;
+}
+
+button {
+  --hue: var(--hue-neutral);
+  border: 2px solid yellow;
+  background-color: palevioletred;
+  border-radius: 5px;
+  padding: 15px 16px;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  border-color: blue;
+}
+
+.start {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.scoresList {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0.3rem 0;
+}
+
+#highScoresList {
+  margin: 1rem 0;
+}
+
+#scoreArea {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid palevioletred;
+}
+
+#init {
+  margin-top: 0.7rem;
+}
+#initials {
+  margin: 0.3rem;
+}
+
+#save-btn {
+  margin: 0.7rem;
+}
+
+#showScoresButton {
+  margin-top: 0.3rem;
+}
